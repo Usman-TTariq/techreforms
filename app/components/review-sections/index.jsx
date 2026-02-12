@@ -1,31 +1,130 @@
+import Image from "next/image";
 
 const ReviewSections = () => {
-    return (
-        <div className="container">
-            <div className="grid grid-cols-12 gap-3">
-                <div className="col-span-3">
-                    <div className="bg-white rounded-4xl pt-[80px] px-[20px] rounded-tl-[120px] hover:bg-[#7724C1] transition-all duration-300">
-
-                    </div>
-                </div>
-                <div className="col-span-3">
-                    <div className="bg-white rounded-4xl pt-[80px] px-[20px] hover:bg-[#7724C1] transition-all duration-300">
-                        
-                    </div>
-                </div>
-                <div className="col-span-3">
-                    <div className="bg-white rounded-4xl pt-[80px] px-[20px] hover:bg-[#7724C1] transition-all duration-300">
-                        
-                    </div>
-                </div>
-                <div className="col-span-3">
-                    <div className="bg-white rounded-4xl pt-[80px] px-[20px] rounded-tr-[120px] hover:bg-[#7724C1] transition-all duration-300">
-                        
-                    </div>
-                </div>
+  return (
+    <div className="container relative pb-[60px]">
+      <Image
+        className="w-[40%] absolute -top-[250px] right-[0%]"
+        src="/images/reviewEllipse.png"
+        alt="Hero Background"
+        width={1000}
+        height={1000}
+      />
+      <div className="grid grid-cols-12 gap-3">
+        <div className="col-span-3 h-full">
+          <div className="group relative h-full bg-white rounded-2xl py-[80px] px-[30px] rounded-tl-[120px] hover:bg-[#7724C1] transition-all duration-300">
+            <Image
+              className="w-[120px] absolute -top-[55px] left-[50%] translate-x-[-50%] opacity-0 transition-all duration-300 group-hover:opacity-100"
+              src="/images/hover-logo.png"
+              alt="Hero Background"
+              width={1000}
+              height={1000}
+            />
+            <Image
+              className="w-[35%] h-full absolute top-0 right-0 opacity-0 transition-all duration-300 group-hover:opacity-100"
+              src="/images/hovertext.png"
+              alt="Hero Background"
+              width={1000}
+              height={1000}
+            />
+            <div>
+              <Image
+                className="w-[40%] m-auto transition-all duration-300 group-hover:brightness-[15]"
+                src="/images/clutch-logo.png"
+                alt="Hero Background"
+                width={1000}
+                height={1000}
+              />
             </div>
+            <div className="flex items-center justify-center gap-2 pt-[10px]">
+              <Image
+                className="w-[100px] transition-all duration-300 group-hover:brightness-[2]"
+                src="/images/stars.png"
+                alt="Hero Background"
+                width={1000}
+                height={1000}
+              />
+              <div className=" font-britanicaRegular text-[#373636] text-[22px] transition-all duration-300 group-hover:text-white">
+                20K reviews
+              </div>
+            </div>
+          </div>
         </div>
-    )
-}
+        <div className="col-span-3 h-full">
+          <div className="group relative h-full bg-white rounded-2xl py-[80px] px-[30px] hover:bg-[#7724C1] transition-all duration-300">
+            <Image
+              className="w-[120px] absolute -top-[55px] left-[50%] translate-x-[-50%] opacity-0 transition-all duration-300 group-hover:opacity-100"
+              src="/images/hover-logo.png"
+              alt="Hero Background"
+              width={1000}
+              height={1000}
+            />
+            <Image
+              className="w-[35%] h-full absolute top-0 right-0 opacity-0 transition-all duration-300 group-hover:opacity-100"
+              src="/images/hovertext.png"
+              alt="Hero Background"
+              width={1000}
+              height={1000}
+            />
+            <div className="text-[46px] font-britanicaBlack leading-[40px] text-black text-center transition-all duration-300 group-hover:text-white">
+              3+ Years
+            </div>
+            <div className=" font-britanicaRegular text-[#373636] text-[22px] text-center transition-all duration-300 group-hover:text-white">
+              Proven Track Record
+            </div>
+          </div>
+        </div>
+        <div className="col-span-3">
+          <div className="group relative bg-white rounded-2xl py-[80px] px-[30px] hover:bg-[#7724C1] transition-all duration-300">
+            <Image
+              className="w-[120px] absolute -top-[55px] left-[50%] translate-x-[-50%] opacity-0 transition-all duration-300 group-hover:opacity-100"
+              src="/images/hover-logo.png"
+              alt="Hero Background"
+              width={1000}
+              height={1000}
+            />
+            <Image
+              className="w-[35%] h-full absolute top-0 right-0 opacity-0 transition-all duration-300 group-hover:opacity-100"
+              src="/images/hovertext.png"
+              alt="Hero Background"
+              width={1000}
+              height={1000}
+            />
+            <div className="text-[46px] font-britanicaBlack leading-[40px] text-black text-center transition-all duration-300 group-hover:text-white">
+              1.5k+
+            </div>
+            <div className=" font-britanicaRegular text-[#373636] text-[22px] text-center transition-all duration-300 group-hover:text-white">
+              Projects We’ve Done
+            </div>
+          </div>
+        </div>
+        <div className="col-span-3">
+          <div className="group relative bg-white rounded-2xl py-[80px] px-[30px] rounded-tr-[120px] hover:bg-[#7724C1] transition-all duration-300">
+            <Image
+              className="w-[120px] absolute -top-[55px] left-[50%] translate-x-[-50%] opacity-0 transition-all duration-300 group-hover:opacity-100"
+              src="/images/hover-logo.png"
+              alt="Hero Background"
+              width={1000}
+              height={1000}
+            />
+            <Image
+              className="w-[35%] h-full absolute top-0 right-0 opacity-0 transition-all duration-300 group-hover:opacity-100 rounded-tr-[130px]"
+              src="/images/hovertext.png"
+              alt="Hero Background"
+              width={1000}
+              height={1000}
+            />
+            <div className="text-[46px] font-britanicaBlack leading-[40px] text-black text-center transition-all duration-300 group-hover:text-white">
+              3 Mins
+            </div>
+            <div className=" font-britanicaRegular text-[#373636] text-[22px] text-center transition-all duration-300 group-hover:text-white">
+              Average Answer Time
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default ReviewSections;  
+export default ReviewSections;

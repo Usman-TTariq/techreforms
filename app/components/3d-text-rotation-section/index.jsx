@@ -167,7 +167,7 @@ const ThreeDTextRotationSection = () => {
                     width={280}
                     height={360}
                     className="absolute -top-[20%] left-0 w-[25%]"
-                />
+                />  
                 <div className="container relative">
                     <div className="grid grid-cols-12 justify-center items-center">
                         <div className="col-span-12 m-auto">
